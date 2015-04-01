@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 白 -->
+    <color name="white">#ffffffff</color>
+    <!-- 透明 -->
+        <color name="screen_background">#333</color>
+    <color name="display_background">#000</color>
+     <color name="nocolo">#00000000</color>
+       <color name="Shallowgray">#f2f2f2</color>
+    <color name="lucensy">#00000001</color>
+    <color name="translucency">#e0000000</color>
+    <color name="blue">#836FFF</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="light_orange">#fcb75c</color>
+    <color name="alpha_00">#00000000</color>
+    <color name="gray">#DBDBDB</color>
+    <color name="gray2">#808080</color>
+    <color name="desktop">#4e4e4e</color>
+    <color name="trans">#50000000</color>
+    <color name="red">#fe0202</color>
+    <color name="background">#e5e5e5</color>
+    <color name="transparent_background">#50000000</color>
+    <color name="text_gray">#4F4F4F</color>
+    <color name="green">#00FF00</color>
+    <color name="grey21">#363636</color>
+    <color name="gold">#b89766</color>
+    <color name="darker_gray">#F0FFFF</color>
+    <color name="azure">#FFFACD</color>
+    <color name="orange">#FFA500</color>
+    <color name="black_2">#aa000000</color>
+    <color name="list_item">#E1E100</color>
+    <color name="detail_list">#B4EEB4</color>
+    <!-- 透明白 -->
+    <color name="white_alpha45">#2dffffff</color>
+    <color name="black_alpha_bg">#dc000000</color>
+    <!-- 深灰色 -->
+    <color name="grey_dark">#444444</color>
+    <!-- 浅灰色 -->
+    <color name="grey_light">#999999</color>
+    <!-- 注释色 -->
+    <color name="note">#cccccc</color>
+    <!-- 链接色 -->
+    <color name="link">#1aadc0</color>
+    <!-- 警示/突出色 -->
+    <color name="alert">#ed5555</color>
+    <!-- 帮助色 -->
+    <color name="help">#fdc870</color>
+    <color name="list_line">#dddddd</color>
+    <!-- 界面配色 -->
+      <color name="head_lead">#3364a6</color>
+      <color name="foot">#363941</color>
+
+</resources>
