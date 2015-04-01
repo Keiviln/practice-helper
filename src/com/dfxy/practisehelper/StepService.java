@@ -1,7 +1,7 @@
 
 package com.dfxy.practisehelper;
 
-import com.dfxy.practisehelper.R;
+import com.example.testtab.R;
 
 import android.app.Notification;
 import android.app.NotificationManager;

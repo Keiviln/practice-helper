@@ -4,7 +4,7 @@ import android.app.Activity;
 import android.os.Bundle;
 import java.text.DecimalFormat;
 
-import com.dfxy.practisehelper.R;
+import com.example.testtab.R;
 
 import android.view.View;
 import android.view.View.OnClickListener;

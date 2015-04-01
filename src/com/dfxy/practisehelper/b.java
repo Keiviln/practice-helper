@@ -5,7 +5,7 @@ import android.os.Bundle;
 import java.util.Calendar;
 
 import com.dfxy.practisehelper.AlarmReceiver;
-import com.dfxy.practisehelper.R;
+import com.example.testtab.R;
 import com.dfxy.practisehelper.b;
 
 import android.app.AlarmManager;
