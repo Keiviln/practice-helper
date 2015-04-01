@@ -1,7 +1,8 @@
 
 package com.dfxy.practisehelper.preferences;
 
-import com.example.testtab.R;
+import com.dfxy.practisehelper.R;
+
 import android.content.Context;
 
 import android.util.AttributeSet;

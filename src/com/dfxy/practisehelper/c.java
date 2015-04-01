@@ -1,11 +1,11 @@
 package com.dfxy.practisehelper;
 
 import com.dfxy.practisehelper.PedometerSettings;
+import com.dfxy.practisehelper.R;
 import com.dfxy.practisehelper.Settings;
 import com.dfxy.practisehelper.StepService;
 import com.dfxy.practisehelper.Utils;
 import com.dfxy.practisehelper.c;
-import com.example.testtab.R;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.os.Bundle;

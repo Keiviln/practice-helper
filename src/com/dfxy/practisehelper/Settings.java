@@ -1,7 +1,7 @@
 
 package com.dfxy.practisehelper;
 
-import com.example.testtab.R;
+import com.dfxy.practisehelper.R;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
