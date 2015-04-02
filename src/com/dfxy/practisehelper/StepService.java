@@ -23,7 +23,7 @@ import android.util.Log;
 import android.widget.Toast;
 
 public class StepService extends Service {
-	private static final String TAG = "com.example.viewpagerdema.StepService";
+	private static final String TAG = "com.dfxy.practisehelper.StepService";
     private SharedPreferences mSettings;
     private PedometerSettings mPedometerSettings;
     private SharedPreferences mState;

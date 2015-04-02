@@ -31,16 +31,16 @@
                 android:entries="@array/units_preference"
                 android:entryValues="@array/units_preference_values"
                 android:dialogTitle="@string/units_setting_title"
-                android:defaultValue="imperial" />
+                android:defaultValue="metric" />
 
-        <com.example.testtab.preferences.StepLengthPreference
+        <com.dfxy.practisehelper.preferences.StepLengthPreference
                 android:key="step_length"
                 android:title="@string/step_length_setting"
                 android:summary="@string/step_length_setting_details"
                 android:dialogTitle="@string/step_length_setting_title"
                 android:defaultValue="20" />
             
-        <com.example.testtab.preferences.BodyWeightPreference
+        <com.dfxy.practisehelper.preferences.BodyWeightPreference
                 android:key="body_weight"
                 android:title="@string/body_weight_setting"
                 android:summary="@string/body_weight_setting_details"

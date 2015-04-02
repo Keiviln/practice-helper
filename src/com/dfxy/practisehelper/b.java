@@ -153,7 +153,7 @@ public void onCreate(Bundle savedInstanceState) {
 				// pendingIntent);
 				Toast.makeText(
 						b.this,
-						"设置闹钟的时间为：" + String.valueOf(h) + ":"
+						"设置的提醒时间为：" + String.valueOf(h) + ":"
 								+ String.valueOf(m), Toast.LENGTH_SHORT)
 						.show();
 			}

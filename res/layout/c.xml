@@ -4,7 +4,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:padding="@dimen/margin" 
-    android:background="@color/screen_background">
+    android:background="@color/white">
     
     <LinearLayout android:id="@+id/row_1"
         android:orientation="horizontal" 
@@ -25,19 +25,21 @@
                 android:layout_width="fill_parent" 
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal" 
-                android:background="@color/display_background" 
+                android:background="@color/white" 
                 android:paddingLeft="@dimen/padding" 
                 android:paddingRight="@dimen/padding" 
                 android:paddingTop="@dimen/padding"
                 android:text=""/>
-            <TextView android:id="@+id/step_units"
-                android:gravity="center_horizontal"
+
+            <TextView
+                android:id="@+id/step_units"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:textSize="@dimen/units" 
-                android:text="@string/steps" 
-                android:background="@color/display_background" 
-                android:paddingBottom="@dimen/padding"/>
+                android:background="@color/white"
+                android:gravity="center_horizontal"
+                android:paddingBottom="@dimen/padding"
+                android:text="@string/steps"
+                android:textSize="@dimen/units" />
 
         </LinearLayout>
 
@@ -53,7 +55,7 @@
                 android:layout_width="fill_parent" 
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal" 
-                android:background="@color/display_background" 
+                android:background="@color/white" 
                 android:paddingTop="@dimen/padding" 
                 android:paddingRight="@dimen/padding" 
                 android:paddingLeft="@dimen/padding"
@@ -64,7 +66,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/units"
                 android:text="@string/kilometers" 
-                android:background="@color/display_background" 
+                android:background="@color/white" 
                 android:paddingBottom="@dimen/padding"/>
 
         </LinearLayout>
@@ -87,7 +89,7 @@
                 android:gravity="center_horizontal"
                 android:layout_width="fill_parent" 
                 android:layout_height="wrap_content" 
-                android:background="@color/display_background" 
+                android:background="@color/white" 
                 android:textSize="@dimen/small_value" 
                 android:paddingLeft="@dimen/padding" 
                 android:paddingRight="@dimen/padding" 
@@ -100,7 +102,7 @@
                 android:textSize="@dimen/units"
                 android:text="@string/steps_per_minute" 
                 android:paddingBottom="@dimen/padding" 
-                android:background="@color/display_background"/>
+                android:background="@color/white"/>
                          
         </LinearLayout>
 
@@ -115,7 +117,7 @@
                 android:gravity="center_horizontal"
                 android:layout_width="fill_parent" 
                 android:layout_height="wrap_content" 
-                android:background="@color/display_background" 
+                android:background="@color/white" 
                 android:textSize="@dimen/small_value" 
                 android:paddingLeft="@dimen/padding" 
                 android:paddingRight="@dimen/padding" 
@@ -128,7 +130,7 @@
                 android:textSize="@dimen/units"
                 android:text="@string/kilometers_per_hour" 
                 android:paddingBottom="@dimen/padding" 
-                android:background="@color/display_background"/>
+                android:background="@color/white"/>
         </LinearLayout>
 
         <LinearLayout android:id="@+id/box_calories"
@@ -141,7 +143,7 @@
                 android:gravity="center_horizontal"
                 android:layout_width="fill_parent" 
                 android:layout_height="wrap_content" 
-                android:background="@color/display_background" 
+                android:background="@color/white" 
                 android:textSize="@dimen/small_value" 
                 android:paddingLeft="@dimen/padding" 
                 android:paddingRight="@dimen/padding" 
@@ -154,21 +156,21 @@
                 android:textSize="@dimen/units" 
                 android:text="@string/calories_burned" 
                 android:paddingBottom="@dimen/padding" 
-                android:background="@color/display_background"/>
+                android:background="@color/white"/>
                          
         </LinearLayout>
 
     </LinearLayout>
 
     <!-- Desired pace/speed row -->
+
     <LinearLayout
         android:id="@+id/desired_pace_control"
-        android:paddingTop="@dimen/row_spacing" 
-        android:gravity="center_horizontal"
-        android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1">
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/row_spacing" >
     
         <!-- Button "-", for decrementing desired pace/speed -->
         <Button android:id="@+id/button_desired_pace_lower"
