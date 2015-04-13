@@ -13,14 +13,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Button1" />
+            android:text="@string/tixing1" />
 
         <Button
             android:id="@+id/cancel1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="cancel1" />
+            android:text="@string/cancel" />
     </LinearLayout>
 
     <LinearLayout
@@ -33,14 +33,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Button2" />
+            android:text="@string/tixing2" />
 
         <Button
             android:id="@+id/cancel2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="cancel2" />
+            android:text="@string/cancel" />
     </LinearLayout>
 
     <LinearLayout
@@ -53,14 +53,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Button3" />
+            android:text="@string/tixing3" />
 
         <Button
             android:id="@+id/cancel3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="cancel3" />
+            android:text="@string/cancel" />
     </LinearLayout>
 
     <LinearLayout
@@ -73,14 +73,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Button4" />
+            android:text="@string/tixing4" />
 
         <Button
             android:id="@+id/cancel4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="cancel4" />
+            android:text="@string/cancel" />
     </LinearLayout>
 
     <LinearLayout
@@ -93,14 +93,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Button5" />
+            android:text="@string/tixing5" />
 
         <Button
             android:id="@+id/cancel5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="cancel5" />
+            android:text="@string/cancel" />
     </LinearLayout>
 
 </LinearLayout>

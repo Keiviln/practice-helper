@@ -29,8 +29,6 @@ public class c extends Activity {
 	private static final String TAG = "c";
     private SharedPreferences mSettings;
     private PedometerSettings mPedometerSettings;
-    private Utils mUtils;
-    
     private TextView mStepValueView;
     private TextView mPaceValueView;
     private TextView mDistanceValueView;
@@ -56,7 +54,7 @@ public void onCreate(Bundle savedInstanceState) {
     mStepValue = 0;
     mPaceValue = 0;
     setContentView(R.layout.c);
-    mUtils = Utils.getInstance();
+    Utils.getInstance();
 }
 
 @Override
@@ -72,8 +70,7 @@ protected void onResume() {
     
     mSettings = PreferenceManager.getDefaultSharedPreferences(this);
     mPedometerSettings = new PedometerSettings(mSettings);
-    
-    mUtils.setSpeak(mSettings.getBoolean("speak", false));
+
     
     // Read from preferences if the service was running on the last onPause
     mIsRunning = mPedometerSettings.isServiceRunning();

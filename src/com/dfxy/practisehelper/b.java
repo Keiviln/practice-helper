@@ -110,6 +110,10 @@ public void onCreate(Bundle savedInstanceState) {
 				.getBroadcast(b.this, jj,
 						intent, 0);
 		alarmManager.cancel(pendingIntent);
+		Toast.makeText(
+				b.this,
+				"对应的提醒已经取消", Toast.LENGTH_SHORT)
+				.show();
 		
 	}
 

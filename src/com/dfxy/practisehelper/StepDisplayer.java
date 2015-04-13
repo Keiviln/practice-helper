@@ -4,7 +4,7 @@ package com.dfxy.practisehelper;
 import java.util.ArrayList;
 
 
-public class StepDisplayer implements StepListener, SpeakingTimer.Listener {
+public class StepDisplayer implements StepListener {
 
     private int mCount = 0;
     PedometerSettings mSettings;
@@ -56,13 +56,6 @@ public class StepDisplayer implements StepListener, SpeakingTimer.Listener {
     //-----------------------------------------------------
     // Speaking
     
-    public void speak() {
-        if (mSettings.shouldTellSteps()) { 
-            if (mCount > 0) {
-                mUtils.say("" + mCount + " steps");
-            }
-        }
-    }
     
     
 }

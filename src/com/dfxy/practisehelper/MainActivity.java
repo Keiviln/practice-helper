@@ -26,7 +26,7 @@ public class MainActivity extends TabActivity {
                 .setContent(new Intent(this, b.class))); 
         tabHost.addTab(tabHost.newTabSpec("self")  
                 .setIndicator("计步器")  
-                .setContent(new Intent(this, c.class))); 
+                .setContent(new Intent(this, d.class))); 
           
         
         //指定的当前的tab  

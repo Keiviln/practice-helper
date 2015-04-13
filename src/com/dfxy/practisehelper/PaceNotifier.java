@@ -3,12 +3,7 @@ package com.dfxy.practisehelper;
 
 import java.util.ArrayList;
 
-/**
- * Calculates and displays pace (steps / minute), handles input of desired pace,
- * notifies user if he/she has to go faster or slower.  
- * @author Levente Bagi
- */
-public class PaceNotifier implements StepListener, SpeakingTimer.Listener {
+public class PaceNotifier implements StepListener{
 
     public interface Listener {
         public void paceChanged(int value);
@@ -32,9 +27,6 @@ public class PaceNotifier implements StepListener, SpeakingTimer.Listener {
     /** Should we speak? */
     boolean mShouldTellFasterslower;
 
-    /** When did the TTS speak last time */
-    private long mSpokenAt = 0;
-
     public PaceNotifier(PedometerSettings settings, Utils utils) {
         mUtils = utils;
         mSettings = settings;
@@ -50,9 +42,7 @@ public class PaceNotifier implements StepListener, SpeakingTimer.Listener {
         notifyListener();
     }
     public void reloadSettings() {
-        mShouldTellFasterslower = 
-            mSettings.shouldTellFasterslower()
-            && mSettings.getMaintainOption() == PedometerSettings.M_PACE;
+        mShouldTellFasterslower =  mSettings.getMaintainOption() == PedometerSettings.M_PACE;
         notifyListener();
     }
     
@@ -89,44 +79,7 @@ public class PaceNotifier implements StepListener, SpeakingTimer.Listener {
                 mPace = 60*1000 / avg;
                 
                 // TODO: remove duplication. This also exists in SpeedNotifier
-                if (mShouldTellFasterslower && !mUtils.isSpeakingEnabled()) {
-                    if (thisStepTime - mSpokenAt > 3000 && !mUtils.isSpeakingNow()) {
-                        float little = 0.10f;
-                        float normal = 0.30f;
-                        float much = 0.50f;
-                        
-                        boolean spoken = true;
-                        if (mPace < mDesiredPace * (1 - much)) {
-                            mUtils.say("much faster!");
-                        }
-                        else
-                        if (mPace > mDesiredPace * (1 + much)) {
-                            mUtils.say("much slower!");
-                        }
-                        else
-                        if (mPace < mDesiredPace * (1 - normal)) {
-                            mUtils.say("faster!");
-                        }
-                        else
-                        if (mPace > mDesiredPace * (1 + normal)) {
-                            mUtils.say("slower!");
-                        }
-                        else
-                        if (mPace < mDesiredPace * (1 - little)) {
-                            mUtils.say("a little faster!");
-                        }
-                        else
-                        if (mPace > mDesiredPace * (1 + little)) {
-                            mUtils.say("a little slower!");
-                        }
-                        else {
-                            spoken = false;
-                        }
-                        if (spoken) {
-                            mSpokenAt = thisStepTime;
-                        }
-                    }
-                }
+             
             }
             else {
                 mPace = -1;
@@ -149,13 +102,6 @@ public class PaceNotifier implements StepListener, SpeakingTimer.Listener {
     //-----------------------------------------------------
     // Speaking
     
-    public void speak() {
-        if (mSettings.shouldTellPace()) {
-            if (mPace > 0) {
-                mUtils.say(mPace + " steps per minute");
-            }
-        }
-    }
     
 
 }

@@ -2,7 +2,7 @@
 package com.dfxy.practisehelper;
 
 
-public class DistanceNotifier implements StepListener, SpeakingTimer.Listener {
+public class DistanceNotifier implements StepListener{
 
     public interface Listener {
         public void valueChanged(float value);
@@ -58,16 +58,4 @@ public class DistanceNotifier implements StepListener, SpeakingTimer.Listener {
     public void passValue() {
         // Callback of StepListener - Not implemented
     }
-
-    public void speak() {
-        if (mSettings.shouldTellDistance()) {
-            if (mDistance >= .001f) {
-                mUtils.say(("" + (mDistance + 0.000001f)).substring(0, 4) + (mIsMetric ? " kilometers" : " miles"));
-                // TODO: format numbers (no "." at the end)
-            }
-        }
-    }
-    
-
 }
-

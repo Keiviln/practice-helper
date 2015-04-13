@@ -53,11 +53,6 @@ public class PedometerSettings {
             0)));
     }
     
-    //-------------------------------------------------------------------
-    // Desired pace & speed: 
-    // these can not be set in the preference activity, only on the main
-    // screen if "maintain" is set to "pace" or "speed" 
-    
     public int getDesiredPace() {
         return mSettings.getInt("desired_pace", 180); // steps/minute
     }
@@ -76,45 +71,7 @@ public class PedometerSettings {
         editor.commit();
     }
     
-    //-------------------------------------------------------------------
-    // Speaking:
-    
-    public boolean shouldSpeak() {
-        return mSettings.getBoolean("speak", false);
-    }
-    public float getSpeakingInterval() {
-        try {
-            return Float.valueOf(mSettings.getString("speaking_interval", "1"));
-        }
-        catch (NumberFormatException e) {
-            // This could not happen as the value is selected from a list.
-            return 1;
-        }
-    }
-    public boolean shouldTellSteps() {
-        return mSettings.getBoolean("speak", false) 
-        && mSettings.getBoolean("tell_steps", false);
-    }
-    public boolean shouldTellPace() {
-        return mSettings.getBoolean("speak", false) 
-        && mSettings.getBoolean("tell_pace", false);
-    }
-    public boolean shouldTellDistance() {
-        return mSettings.getBoolean("speak", false) 
-        && mSettings.getBoolean("tell_distance", false);
-    }
-    public boolean shouldTellSpeed() {
-        return mSettings.getBoolean("speak", false) 
-        && mSettings.getBoolean("tell_speed", false);
-    }
-    public boolean shouldTellCalories() {
-        return mSettings.getBoolean("speak", false) 
-        && mSettings.getBoolean("tell_calories", false);
-    }
-    public boolean shouldTellFasterslower() {
-        return mSettings.getBoolean("speak", false) 
-        && mSettings.getBoolean("tell_fasterslower", false);
-    }
+
     
     public boolean wakeAggressively() {
         return mSettings.getString("operation_level", "run_in_background").equals("wake_up");
