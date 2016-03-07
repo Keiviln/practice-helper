@@ -1,17 +1,13 @@
 package com.dfxy.practisehelper;
-
 import android.app.Activity;
 import android.os.Bundle;
 import java.text.DecimalFormat;
-
 import com.example.testtab.R;
-
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
 public class a extends Activity {
 @Override
 public void onCreate(Bundle savedInstanceState) {
@@ -41,17 +37,17 @@ public void onCreate(Bundle savedInstanceState) {
 	        String s=df.format(result);
 			ehealth.setText(s);
 			if(result<18.5){
-				esuggest.setText("ÌåÖØ¹ýÇá£¬×¢ÒâÓªÑø£¡");
+				esuggest.setText("ï¿½ï¿½ï¿½Ø¹ï¿½ï¿½á£¬×¢ï¿½ï¿½Óªï¿½ï¿½ï¿½ï¿½");
 			}else if(18.5<=result && result<24){
-				esuggest.setText("¹§Ï²Äã£¬ÄãµÄÌåÖØÕý³££¬Çë±£³Ö£¡");
+				esuggest.setText("ï¿½ï¿½Ï²ï¿½ã£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ë±£ï¿½Ö£ï¿½");
 			}else if(24<=result && result<27){
-				esuggest.setText("ÄãµÄÌåÖØ¹ýÖØ£¬»¹Òª¼á³Ö¶ÍÁ¶£¡");
+				esuggest.setText("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ø¹ï¿½ï¿½Ø£ï¿½ï¿½ï¿½Òªï¿½ï¿½Ö¶ï¿½ï¿½ï¿½ï¿½ï¿½");
 			}else if(27<=result && result<30){
-				esuggest.setText("Çá¶È·ÊÅÖ£¬Çë×¢Òâ£¡");
+				esuggest.setText("ï¿½ï¿½È·ï¿½ï¿½Ö£ï¿½ï¿½ï¿½×¢ï¿½â£¡");
 			}else if(30<=result && result<35){
-				esuggest.setText("ÖÐ¶È·ÊÅÖ£¬Òª¼õ·ÊÁË£¡£¡");
+				esuggest.setText("ï¿½Ð¶È·ï¿½ï¿½Ö£ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½Ë£ï¿½ï¿½ï¿½");
 			}else{
-				esuggest.setText("ÖØ¶È·ÊÅÖ£¬¸Ã¾øÊ³ÁË£¡£¡£¡");
+				esuggest.setText("ï¿½Ø¶È·ï¿½ï¿½Ö£ï¿½ï¿½Ã¾ï¿½Ê³ï¿½Ë£ï¿½ï¿½ï¿½ï¿½ï¿½");
 			}
 		}
 		
